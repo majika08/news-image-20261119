@@ -25,8 +25,12 @@ The day's eight main stories, in one 1024×1024 panel grid:
 8. **Ethiopia–Eritrea clashes raise war fears** — plus Voyager 1 reaching one
    light-day from Earth.
 
-The program itself is the kit's starter pattern: the repository holds the finished
-image and `main.ts` copies it to the output directory, byte for byte, on every run.
+The image was rendered by the Python scripts in `tools/` (`newsart.py` is the
+drawing library; `gen_candidates.py` drives it to produce candidate panels).
+At submission time, `main.ts` verifies `entry.png` — PNG signature, IHDR
+dimensions, the 1024×1024 and 1 MiB limits, and a full chunk walk ending at
+IEND — then publishes the validated bytes, unchanged, to the output
+directory and prints a one-line JSON manifest with the image's SHA-256.
 
 ## Run it
 
