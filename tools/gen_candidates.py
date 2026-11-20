@@ -14,24 +14,25 @@ DATE = "THURSDAY, NOVEMBER 19, 2026"
 
 S1H = "TRUMP, XI & PUTIN HOLD FIRST-EVER TRILATERAL SUMMIT"
 S1B = ("The US, Chinese and Russian leaders meet in Shenzhen, on the sidelines of APEC. "
-       "On the agenda: nuclear arms control, the Ukraine war and Iran. Xi greeted Trump at "
-       "the airport; Xi's meeting with Putin was their 50th.")
+       "They issue a four-point 'Declaration toward Peace' on UN reform, oil, the ICC and "
+       "nuclear risk, but no deal on Ukraine or Iran. Xi greeted Trump at the airport; "
+       "Xi's meeting with Putin was their 50th.")
 S2H = "IRAN WIDENS ATTACKS ON GULF NEIGHBOURS"
-S2B = ("Strikes hit a US air base in Kuwait and targets in Bahrain, home of the US Fifth "
-       "Fleet. Gulf states repel Iranian drone attacks; three oil tankers catch fire after "
-       "hitting mines east of the Strait of Hormuz.")
+S2B = ("Iran fires drones at a US base in Kuwait and Bahrain; both say they were stopped. "
+       "Three tankers afire near Hormuz.")
 S3H = "ISRAEL LAUNCHES GROUND OPERATION IN CENTRAL GAZA"
-S3B = "Israeli forces move into central Gaza as residents flee the fighting."
+S3B = "A one-day operation in central Gaza ends Thursday; residents flee the fighting."
 S4H = "DEMOCRATS NOMINATE JEFFRIES FOR HOUSE SPEAKER"
 S4B = ("Hakeem Jeffries is set to become the first African-American Speaker after "
        "Democrats sweep the midterms, taking the Senate 56-44.")
 S5H = "ANTHROPIC'S IPO BREAKS ALL RECORDS"
-S5B = ("The AI company raises a reported $107 billion, topping SpaceX's record debut. "
-       "Shares begin trading on Nasdaq under the ticker ANT.")
+S5B = ("The AI company raises $81 billion, the largest IPO ever, topping SpaceX's "
+       "$75 billion. Shares jump 17% on debut.")
 S6H = "GTA VI LAUNCHES WORLDWIDE"
 S6B = "'Grand Theft Auto VI' goes on sale around the world to near-perfect reviews."
-S7H = "WORLD COURT RULES IN ROHINGYA GENOCIDE CASE"
-S7B = "The International Court of Justice delivers its ruling in Myanmar's Rohingya genocide case."
+S7H = "WORLD COURT: MYANMAR COMMITTED GENOCIDE"
+S7B = ("In a historic first, the court finds Myanmar guilty of genocide and orders "
+       "reparations for the Rohingya.")
 S8H = "ETHIOPIA-ERITREA CLASHES RAISE WAR FEARS"
 S8B = "Fighting between Ethiopia and Eritrea raises fears of a return to full-scale war."
 
@@ -178,16 +179,17 @@ def cand03():
         fx += 148
     c.text(524, 178, "SHENZHEN · APEC SIDELINES", "sans_b", 21, (197, 48, 49))
     c.para(524, 204, "FIRST-EVER US-CHINA-RUSSIA SUMMIT", "disp_xb", 31, 440, SLATE, leading=1.12)
-    c.para(60, 278, "Trump, Xi and Putin meet in Shenzhen. Agenda: nuclear arms control, the Ukraine war "
-                    "and Iran. Xi greeted Trump at the airport; the Xi-Putin meeting was their 50th.",
+    c.para(60, 278, "Trump, Xi and Putin meet in Shenzhen. They issue a four-point 'Declaration "
+                    "toward Peace' on UN reform, oil, the ICC and nuclear risk, but no deal on "
+                    "Ukraine or Iran. Xi greeted Trump at the airport; the Xi-Putin meeting was their 50th.",
            "sans", 22, 904, (51, 65, 85), leading=1.3)
     panels = [
-        ("missile", (197, 48, 49), S2H, "US base in Kuwait hit; Bahrain targets struck; drones repelled; three tankers afire near Hormuz."),
-        ("burst", (217, 119, 6), S3H, "Israeli forces move into central Gaza as residents flee the fighting."),
+        ("missile", (197, 48, 49), S2H, "Iran fires drones at a US base in Kuwait and Bahrain; both say they were stopped. Three tankers afire near Hormuz."),
+        ("burst", (217, 119, 6), S3H, "A one-day operation in central Gaza ends Thursday; residents flee the fighting."),
         ("dome", (37, 99, 235), S4H, "Hakeem Jeffries, set to be the first African-American Speaker; Democrats also take the Senate 56-44."),
-        ("chart", (5, 150, 105), S5H, "Reported $107 billion raised, topping SpaceX's record. Shares trade on Nasdaq as ANT."),
+        ("chart", (5, 150, 105), S5H, "$81 billion raised, the largest IPO ever, topping SpaceX's $75 billion. Shares jump 17% on debut."),
         ("controller", (124, 58, 237), S6H, "'Grand Theft Auto VI' goes on sale worldwide to near-perfect reviews."),
-        ("scales", (13, 148, 136), S7H, "The International Court of Justice delivers its ruling in Myanmar's Rohingya genocide case."),
+        ("scales", (13, 148, 136), S7H, "In a historic first, the court finds Myanmar guilty of genocide and orders reparations for the Rohingya."),
     ]
     pw, ph = 468, 168
     for i, (ic, colr, h, b) in enumerate(panels):
