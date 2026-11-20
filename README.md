@@ -11,17 +11,20 @@ by a program: every letter, flag and pictogram in `entry.png` is rendered in cod
 The day's eight main stories, in one 1024×1024 panel grid:
 
 1. **Trump, Xi & Putin hold the first-ever US–China–Russia trilateral summit** in
-   Shenzhen, on the sidelines of APEC — nuclear arms control, the Ukraine war and Iran
-   on the agenda; the Xi–Putin meeting was their 50th.
-2. **Iran widens attacks on Gulf neighbours** — a US air base in Kuwait and targets in
-   Bahrain hit, drones repelled, three oil tankers afire after mines near Hormuz.
-3. **Israel launches a ground operation in central Gaza**; residents flee.
+   Shenzhen, on the sidelines of APEC — a four-point 'Declaration toward Peace' on
+   UN reform, oil, the ICC and nuclear risk, but no deal on Ukraine or Iran; the
+   Xi–Putin meeting was their 50th.
+2. **Iran widens attacks on Gulf neighbours** — Iran fires drones at a US air base in
+   Kuwait and Bahrain; both say they were stopped, three oil tankers afire near Hormuz.
+3. **Israel launches a ground operation in central Gaza** — a one-day operation that
+   ends Thursday; residents flee.
 4. **Democrats nominate Hakeem Jeffries for House Speaker** — set to become the first
    African-American Speaker after the midterm sweep; the Senate taken 56–44.
-5. **Anthropic's record-breaking IPO** — a reported $107 billion raised, topping
-   SpaceX's record debut; Nasdaq ticker ANT.
+5. **Anthropic's record-breaking IPO** — $81 billion raised, the largest IPO ever,
+   topping SpaceX's $75 billion; shares jump 17% on debut.
 6. **'Grand Theft Auto VI' launches worldwide** to near-perfect reviews.
-7. **The World Court (ICJ) delivers its ruling** in Myanmar's Rohingya genocide case.
+7. **The World Court (ICJ) finds Myanmar guilty of genocide** against the Rohingya —
+   a historic first — and orders reparations.
 8. **Ethiopia–Eritrea clashes raise war fears** — plus Voyager 1 reaching one
    light-day from Earth.
 
@@ -38,7 +41,7 @@ directory and prints a one-line JSON manifest with the image's SHA-256.
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
-This writes `out/entry.png` (1024×1024 PNG, 305,683 bytes), identical to the
+This writes `out/entry.png` (1024×1024 PNG, 322,811 bytes), identical to the
 `entry.png` in this repository.
 
 ---
